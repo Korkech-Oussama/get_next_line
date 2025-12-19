@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: okorkech <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/19 13:12:54 by okorkech          #+#    #+#             */
-/*   Updated: 2025/12/19 13:12:57 by okorkech         ###   ########.fr       */
+/*   Created: 2025/12/19 21:47:07 by okorkech          #+#    #+#             */
+/*   Updated: 2025/12/19 21:47:09 by okorkech         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*process(char **pre_line)
 {
@@ -69,9 +69,9 @@ char	*get_line(int fd, char **pre_line)
 
 char	*get_next_line(int fd)
 {
-	static char	*line;
+	static char	*line[FD_MAX];
 
-	if (fd < 0 || BUFFER_SIZE <= 0)
+	if (fd < 0 || fd >= FD_MAX || BUFFER_SIZE <= 0)
 		return (NULL);
-	return (get_line(fd, &line));
+	return (get_line(fd, &line[fd]));
 }
