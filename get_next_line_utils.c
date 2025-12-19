@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 
-static size_t	get_len(const char *s)
+size_t	get_len(const char *s)
 {
 	size_t	i;
 
@@ -50,7 +50,7 @@ char	*get_strdup(const char *s)
 int	get_strchr(const char *s, int c)
 {
 	if (!s)
-		return (NULL);
+		return (0);
 	while (*s)
 	{
 		if (*s == c)
