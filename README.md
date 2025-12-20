@@ -14,9 +14,12 @@ The goal is to learn about **static variables**, **file descriptor management**,
 ### Prototype
 ```c
 char *get_next_line(int fd);
+```
 
+### Compilation
 ```bash
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
+```
 
 ### Files Structure
 
