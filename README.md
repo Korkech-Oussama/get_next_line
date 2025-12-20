@@ -28,7 +28,7 @@ get_next_line.h
 ```
 
 **Bonus:**
-```
+```c
 get_next_line_bonus.c
 get_next_line_bonus_utils.c
 get_next_line_bonus.h
@@ -139,7 +139,7 @@ Read data in chunks of `BUFFER_SIZE` bytes, accumulate until `\n` is found, stor
 - [open(2) man page](https://man7.org/linux/man-pages/man2/open.2.html) - File descriptor operations
 - [malloc(3) man page](https://man7.org/linux/man-pages/man3/malloc.3.html) - Memory allocation
 - **Book:** *Computer Systems: A Programmer's Perspective by David O'Hallaron and Randal Bryant
--youtube :- https://www.youtube.com/watch?v=-Mt2FdJjVno&t=618s
+- **Youtube:**- https://www.youtube.com/watch?v=-Mt2FdJjVno&t=618s
 
 
 ### AI Usage
@@ -156,5 +156,3 @@ Read data in chunks of `BUFFER_SIZE` bytes, accumulate until `\n` is found, stor
 - Writing the core implementation
 - Solving the algorithm
 - Debugging the actual code
-
-The implementation is **original work**. AI was a supplementary tool for documentation and concept verification.
