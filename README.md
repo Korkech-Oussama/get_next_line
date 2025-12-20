@@ -193,7 +193,7 @@ Read data in chunks of `BUFFER_SIZE` bytes, accumulate until `\n` is found, stor
 - [read(2) man page](https://man7.org/linux/man-pages/man2/read.2.html) - System call reference
 - [open(2) man page](https://man7.org/linux/man-pages/man2/open.2.html) - File descriptor operations
 - [malloc(3) man page](https://man7.org/linux/man-pages/man3/malloc.3.html) - Memory allocation
-- **Book:** *Computer Systems: A Programmer's Perspective by David O'Hallaron and Randal Bryant
+- **Book:** Computer Systems: A Programmer's Perspective by David O'Hallaron and Randal Bryant
 - **Youtube:**- https://www.youtube.com/watch?v=-Mt2FdJjVno&t=618s
 
 
