@@ -60,7 +60,7 @@ char	*get_line(int fd, char **pre_line)
 		tmp = *pre_line;
 		*pre_line = get_strjoin(tmp, buffer);
 		free(tmp);
-		if (!pre_line)
+		if (!*pre_line)
 			return (free(buffer), NULL);
 	}
 	free(buffer);
